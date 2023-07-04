@@ -2,24 +2,32 @@ let seconds = 10;
 let correctAnswer = 0;
 let incorrectAnswer = 0;
 
-function getElement(id){
+function getElement(id) {
     return document.getElementById(id);
 
 }
+function getRandomCountry() {
+    return countries[Math.floor(Math.random(countries.length - 1) * 10)]
+}
+function main() {
+    coun = getRandomCountry();
+    getElement("flag").src = coun.flag;
+}
 
-function timer(){
+function timer() {
     setTimeout(finish, seconds * 1000);
     getElement("time").innerHTML = seconds
     let countdown = setInterval(function () {
-seconds--;
+        main();
+        seconds--;
         getElement("time").textContent = seconds;
-        if(seconds <= 0) clearInterval(countdown);
-        if(seconds === 5) getElement("time").style.color = "#ff0000";
-   }, 1000);
+        if (seconds <= 0) clearInterval(countdown);
+        if (seconds === 5) getElement("time").style.color = "#ff0000";
+    }, 1000);
 }
-function check(){
+function check() {
     let input;
-    try{
+    try {
         input = document.querySelector('input[name ="option"]:checked').value;
     } catch {
         return;
@@ -28,7 +36,7 @@ function check(){
     getElement("score").innerHTML = correctAnswer;
     clearInterval(checkInterval);
 }
-function finish(){
+function finish() {
     clearInterval(checkInterval);
     let percentage = 100;
     getElement("alertaccuracy").innerHTML = `${percentage}%`;
