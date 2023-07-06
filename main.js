@@ -1,3 +1,4 @@
+let correct;
 let seconds = 10;
 let correctAnswer = 0;
 let incorrectAnswer = 0;
@@ -7,11 +8,25 @@ function getElement(id) {
 
 }
 function getRandomCountry() {
-    return countries[Math.floor(Math.random(countries.length - 1) * 10)]
+    return countries[Math.round(Math.random() * (countries.length - 1))]
 }
 function main() {
-    coun = getRandomCountry();
-    getElement("flag").src = coun.flag;
+    let options = [];
+    const maxOptions = 3;
+    while (options.length < maxOptions) {
+        let coun = getRandomCountry();
+        if (options.indexOf(coun) === -1) {
+            options.push(coun);
+        }
+    }
+    for (let i = 0; i < options.length; i++) {
+        getElement(`option${i + 1}label`).innerHTML = options[i].name;
+        getElement(`option${i + 1}input`).value = options[i].name;
+        getElement(`option${i + 1}input`).checked = false;
+    }
+    correct = options[Math.round(Math.random() * (options.length - 1))];
+    getElement("flag").src = correct.flag;
+
 }
 
 function timer() {
@@ -32,14 +47,20 @@ function check() {
     } catch {
         return;
     }
-    correctAnswer++;
-    getElement("score").innerHTML = correctAnswer;
-    clearInterval(checkInterval);
+    if (input === correct.name) {
+        correctAnswer++;
+        getElement("score").innerHTML = correctAnswer;
+    } else {
+        incorrectAnswer++;
+    }
+    main();
 }
+
 function finish() {
     clearInterval(checkInterval);
     let percentage = 100;
     getElement("alertaccuracy").innerHTML = `${percentage}%`;
 }
 let checkInterval = setInterval(check, 50);
+main();
 timer();

@@ -1,146 +1,146 @@
 const countries = [
     {
-        "flag": "flags/Andorra.svg.png",
-        "name": "Անդորրա"
+        "flag": "flags/Andorra.png",
+        "name": "Անդորրա լա Վելյաորրա"
     },
     {
-        "flag": "flags/Belgium.svg.png",
-        "name": "Բելգիա"
+        "flag": "flags/Belgium.png",
+        "name": "Բրյուսել"
     },
     {
         "flag": "flags/Canada.png",
-        "name": "Կանադա"
+        "name": "Օտտավա"
     
     },
     {
-        "flag": "flags/Afghanistan.svg.webp",
-        "name": "Աֆղանստան"
+        "flag": "flags/Afghanistan.png",
+        "name": "Քաբուլ"
     
     },
     {
-        "flag": "flags/Bangladesh.svg.webp",
-        "name":"Բանգլադեշ"
+        "flag": "flags/Bangladesh.png",
+        "name":"Դաքքա"
     
     },
     {
-        "flag": "flags/Bosnia_and_Herzegovina.svg.webp",
-        "name": "Բոսնիա և Հերցեգովինա"
+        "flag": "flags/Bosnia&Herzegovina.png",
+        "name": "Սարաևո"
     
     },
     {
-        "flag": "flags/Bulgaria.svg.webp",
-        "name": "Բուլղարիա"
+        "flag": "flags/Bulgaria.png",
+        "name": "Սոֆիա"
     
     },
     {
-        "flag": "flags/Finland.svg.webp",
-        "name": "Ֆինլանդիա"
+        "flag": "flags/Finland.png",
+        "name": "Հելսինկի"
     
     },
     {
-        "flag": "flags/Hungary.svg.png",
-        "name": "Հունգարիա"
+        "flag": "flags/Hungary.png",
+        "name": "Բուդապեշտ"
     
     },
     {
-        "flag": "flags/Indonesia.svg.webp",
-        "name": "Ինդոնեզիա"
+        "flag": "flags/Indonesia.png",
+        "name": "Ջակարտա"
     
     },
     {
         "flag": "flags/Iraq.svg.webp",
-        "name": "Իրաք"
+        "name": "Բաղդադ"
     
     },
     {
         "flag": "flags/Israel.svg.webp",
-        "name": "Իսրաել"
+        "name": "Երուսաղեմ "
     
     },
     {
-        "flag": "flags/Laos.svg.webp",
-        "name": "Լաոս"
+        "flag": "flags/Laos.png",
+        "name": "Վիենտյան"
     
     },
     {
-        "flag": "flags/Latvia.svg.webp",
-        "name": "Լատվիա"
+        "flag": "flags/Latvia.png",
+        "name": "Ռիգա"
     
     },
     {
-        "flag": "flags/Maldives.svg.webp",
-        "name": "Մալդիվներ"
+        "flag": "flags/maldives.png",
+        "name": "Մալե"
     
     },
     {
-        "flag": "flags/Monaco.svg.webp",
+        "flag": "flags/Monaco.png",
         "name": "Մոնակո"
     
     },
     {
-        "flag": "flags/Nepal.svg.webp",
-        "name": "Նեպալ"
+        "flag": "flags/Nepal.png",
+        "name": "Կատմանդու"
     
     },
     {
-        "flag": "flags/North_Korea.svg.webp",
-        "name": "Հյուսիսային Կորեա"
+        "flag": "flags/north korea.png",
+        "name": "Փխենյան"
     
     },
     
      {
-        "flag": "flags/North_Macedonia.svg.webp",
-        "name": "Հյուսիսային Մակեդոնիա"
+        "flag": "flags/North MAcedonia.png",
+        "name": "Սկոպյե"
     
     },
     {
-        "flag": "flags/Qatar.svg.webp",
-        "name": "Քաթար"
+        "flag": "flags/qatar.png",
+        "name": "Դոհա"
     
     },
     {
-        "flag": "flags/Saudi_Arabia.svg.webp",
-        "name": "Սաուդիան Արաբիա"
+        "flag": "flags/Saudi Arabia.png",
+        "name": "Էր Ռիադ"
     
     },
     {
-        "flag": "flags/Serbia.svg.png",
-        "name": "Սերբիա"
+        "flag": "flags/Serbia.png",
+        "name": "Բելգրադ"
     
     },
     {
-        "flag": "flags/Singapore.svg.webp",
+        "flag": "flags/Singapore.png",
         "name": "Սինգապուր"
     
     },
     {
-        "flag": "flags/Syria.svg.webp",
-        "name": "Սիրիա"
+        "flag": "flags/Syria.png",
+        "name": "Դամասկոս"
     
     },
     {
-        "flag": "flags/tajikistan.svg.webp",
-        "name": "Տաջիկսատն"
+        "flag": "flags/Tajikistan.png",
+        "name": "Դուշանբե"
     
     },
     {
-        "flag": "flags/Thailand.svg.webp",
-        "name": "Թաիլանդ"
+        "flag": "flags/Thailand.png",
+        "name": "Բանգկոկ"
     
     },
     {
-        "flag": "flags/United_Arab_Emirates.svg.webp",
-        "name": "Արաբական Միացյալ Էմիրություններ"
+        "flag": "flags/united arab emirates.png",
+        "name": "Աբու Դաբի"
     
     },
     {
-        "flag": "flags/United_Kingdom.svg.webp",
+        "flag": "flags/united Kingdom.png",
         "name": "Միացյալ Թագավորություն"
     
     },
     {
-        "flag": "flags/Uzbekistan.svg.webp",
-        "name": "Ուզբեկստան"
+        "flag": "flags/Uzbekistan.png",
+        "name": "Տաշքենդ"
     
     },
    
