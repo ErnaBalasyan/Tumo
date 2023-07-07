@@ -48,12 +48,12 @@ const countries = [
     
     },
     {
-        "flag": "flags/Iraq.svg.webp",
+        "flag": "flags/Iraq.png",
         "name": "Բաղդադ"
     
     },
     {
-        "flag": "flags/Israel.svg.webp",
+        "flag": "flags/Israel.png",
         "name": "Երուսաղեմ "
     
     },
@@ -135,7 +135,7 @@ const countries = [
     },
     {
         "flag": "flags/united Kingdom.png",
-        "name": "Միացյալ Թագավորություն"
+        "name": "Լոնդոն"
     
     },
     {
@@ -143,8 +143,32 @@ const countries = [
         "name": "Տաշքենդ"
     
     },
-   
-
+    {
+        "flag": "flags/india.png",
+        "name": "Նյու Դելի"
+    
+    },
+    {
+        "flag": "flags/georgia.png",
+        "name": "Թբիլիսի"
+    
+    },
+    {
+        "flag": "flags/spain.png",
+        "name": "Մադրիդ"
+    
+    },
+    {
+        "flag": "flags/france.png",
+        "name": "Փարիզ"
+    
+    },
+    {
+        "flag": "flags/Italy.png",
+        "name": "Իտալիա"
+    
+    },
+    
 
 
 ]
