@@ -1,14 +1,15 @@
 let correct;
-let seconds = 50;
+let seconds = 30;
 let correctAnswer = 0;
 let incorrectAnswer = 0;
+let resultForAnswer;
 function getElement(id) {
   return document.getElementById(id);
 }
 function getRandomCountry() {
   return countries[Math.round(Math.random() * (countries.length - 1))];
 }
-function main (){
+function main() {
   let options = [];
   const maxOptions = 3;
   while (options.length < maxOptions) {
@@ -26,7 +27,7 @@ function main (){
   getElement("flag").src = correct.flag;
 }
 function timer() {
- setTimeout(finish, seconds * 1000);
+  setTimeout(finish, seconds * 1000);
   getElement("time").innerHTML = seconds;
   let countdown = setInterval(function () {
     seconds--;
@@ -51,24 +52,29 @@ function check() {
   main();
 }
 function finish() {
-    clearInterval(checkInterval);
-    let percentage =Math.round( correctAnswer / (correctAnswer+incorrectAnswer) * 100);
-let resultForAnswer;
-if(isNaN(percentage)){
-   getElement("alertaccuracy").innerHTML = "not answer"
+  clearInterval(checkInterval);
+  getElement("alert").style.display = "block";
+  getElement("card").style.display = "none";
+  getElement("alertscore").innerHTML = correctAnswer;
+  let percentage = Math.round((correctAnswer / (correctAnswer + incorrectAnswer)) * 100);
+  if (isNaN(percentage)) {
+    resultForAnswer = "պատասխան չկա"
+  } else {
+    if (percentage >= 80) {
+      resultForAnswer = "գերազանց է"
+    } else if (percentage < 50) {
+      resultForAnswer = "վատ է"
+    } else if (percentage >= 50 && percentage <= 80) {
+      resultForAnswer = "միջին արդյունք"
+    }
+
+  }
+  getElement("alertscore1").innerHTML = resultForAnswer;
+
 }
-   else {if(percentage >= 80){
-    resultForAnswer = "great"
-   }
-   else if(percentage < 50){
-    resultForAnswer = "bad"
-   }
-   else if(percentage >= 50 && percentage <= 80){
-    resultForAnswer = "not bad"
-   }
- 
-  getElement("alertaccuracy").innerHTML = ` ${percentage}%`;
-}
+
+function refresh() {
+  location = location;
 }
 
 let checkInterval = setInterval(check, 50);

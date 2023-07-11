@@ -165,10 +165,61 @@ const countries = [
     },
     {
         "flag": "flags/Italy.png",
-        "name": "Իտալիա"
+        "name": "Հռոմ"
     
     },
     
-
+    {
+        "flag": "flags/portugal.png",
+        "name": "Լիսաբոն"
+    
+    },
+    {
+        "flag": "flags/Armenia.png",
+        "name": "Երևան"
+    
+    },
+    {
+        "flag": "flags/Russia.png",
+        "name": "Մոսկվա"
+    
+    },
+    {
+        "flag": "flags/Belarus.png",
+        "name": "Մինսկ"
+    
+    },
+    {
+        "flag": "flags/Ukraine.png",
+        "name": "Կիև"
+    
+    },
+    {
+        "flag": "flags/Brazil.png",
+        "name": "Բրազիլիա"
+    
+    },
+    {
+        "flag": "flags/Colombia.png",
+        "name": "Բոգոտա"
+    
+    },
+    {
+        "flag": "flags/Uruguay.png",
+        "name": "Մոնտեվիդեո"
+    
+    },
+    {
+        "flag": "flags/Usa.png",
+        "name": "Վաշինգտոն"
+    
+    },
+    {
+        "flag": "flags/Czech.png",
+        "name": "Պրահա"
+    
+    },
+    
+    
 
 ]
